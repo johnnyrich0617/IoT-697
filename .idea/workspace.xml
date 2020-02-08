@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d9d1864-0aed-4e8e-83a6-d0027a4e215e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWeatherDisplayMQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWeatherDisplayMQTT.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="John Richardson &lt;john.richardson.0617@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XXMXwvLxq0e1eI2vpKaf9qPHDL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d9d1864-0aed-4e8e-83a6-d0027a4e215e" name="Default Changelist" comment="" />
+      <created>1581188028529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581188028529</updated>
+      <workItem from="1581188030029" duration="9446000" />
+    </task>
+    <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
+      <created>1581190480554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581190480554</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added debug msgs">
+      <created>1581192109417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581192109417</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed error with print">
+      <created>1581192360390</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581192360390</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactored on_connect to static function">
+      <created>1581192778896</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581192778896</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactored global CONNECTED to static function">
+      <created>1581193281652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581193281652</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactored for loop_forever">
+      <created>1581194436565</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581194436565</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Moved loop in main">
+      <created>1581195269338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581195269338</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Moved loop in main">
+      <created>1581195537949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581195537949</updated>
+    </task>
+    <task id="LOCAL-00009" summary="More refactoring">
+      <created>1581196528590</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581196528590</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Encapsulated Publisher code into class" />
+    <MESSAGE value="Added debug msgs" />
+    <MESSAGE value="Fixed error with print" />
+    <MESSAGE value="Refactored on_connect to static function" />
+    <MESSAGE value="Refactored global CONNECTED to static function" />
+    <MESSAGE value="Refactored for loop_forever" />
+    <MESSAGE value="Moved loop in main" />
+    <MESSAGE value="More refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="More refactoring" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581196528492">
+      <screen x="0" y="23" width="1536" height="877" />
+    </state>
+    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.876@0.23.1536.876" timestamp="1581190480368" />
+    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.877@0.23.1536.877" timestamp="1581196528492" />
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2" timestamp="1581196529906">
+      <screen x="0" y="23" width="1536" height="877" />
+    </state>
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.876@0.23.1536.876" timestamp="1581190488464" />
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.877@0.23.1536.877" timestamp="1581196529906" />
+  </component>
+</project>
