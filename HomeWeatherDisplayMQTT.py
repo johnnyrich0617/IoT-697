@@ -123,6 +123,9 @@ public_mqtt_client = public_publisher.get_client()
 local_mqtt_client.on_connect = local_on_connect
 public_mqtt_client.on_connect = public_on_connect
 
+local_publisher.connect()
+public_publisher.connect()
+
 local_mqtt_client.loop_start()
 public_mqtt_client.loop_start()
 
