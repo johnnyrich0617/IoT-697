@@ -34,6 +34,10 @@ class HomeWeatherPublisher:
         self.mqtt_client.disconnect()
         self.mqtt_client.loop_stop()
 
+    def set_callbacks(self, on_connection, on_publish):
+        self.mqtt_client.on_connect = on_connection
+        self.mqtt_client.on_publish = on_publish
+
     def publish_msg(self, temp, humidity):
         mqtt_msg = wdm.WeatherDisplayMessage(temp=temp, humidity=humidity)
         print("Created new MQTT Message with the following:")

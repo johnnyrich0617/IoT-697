@@ -82,8 +82,6 @@ setText_norefresh(" ")
 
 
 # global variables for connection state and other data
-
-# USE WITH OUT PUBLISHER
 LOCAL_CONNECTED = False
 PUBLIC_CONNECTED = False
 
@@ -94,45 +92,37 @@ public_broker_address = "test.mosquitto.org"
 # public_broker_port = 1883
 port = 1883
 
+'''
+CONNECT AND MANAGE CONNECTION
+THIS IS THE CODE USING ENCAPSULATED MQTT PUBLISHERS
+LOCAL_PUBLISHER
+PUBLIC_PUBLISHER
+'''
 local_publisher = hwdp.HomeWeatherPublisher(local_broker_address, port, "LOCALCLIENT", PUBLISH_TOPIC)
 public_publisher = hwdp.HomeWeatherPublisher(public_broker_address, port, "PUBLICCLIENT", PUBLISH_TOPIC)
 
-'''
-# USE WITH OUT PUBLISHER
-# create the MQTT Clients
-local_client = mqttClient.Client("LOCAL")  # create new instance
-public_client = mqttClient.Client("PUBLIC")
+# local_mqtt_client.on_connect = local_on_connect
+# public_mqtt_client.on_connect = public_on_connect
 
-# attach functions to callbacks
-local_client.on_connect = local_on_connect
-local_client.on_publish = local_on_publish
-public_client.on_connect = public_on_connect
-public_client.on_publish = public_on_publish
-
-local_client.connect(local_broker_address)  # connect to broker
-public_client.connect(public_broker_address, port=public_broker_port)
-
-# start the connection loops
-local_client.loop_start()
-public_client.loop_start()
-'''
-
-local_mqtt_client = local_publisher.get_client()
-public_mqtt_client = public_publisher.get_client()
-
-local_mqtt_client.on_connect = local_on_connect
-public_mqtt_client.on_connect = public_on_connect
+local_publisher.set_callbacks(on_connection=local_on_connect, on_publish=local_on_publish)
+public_publisher.set_callbacks(on_connection=public_on_connect, on_publish=public_on_connect)
 
 local_publisher.connect()
 public_publisher.connect()
 
+local_mqtt_client = local_publisher.get_client()
+public_mqtt_client = public_publisher.get_client()
+
 local_mqtt_client.loop_start()
 public_mqtt_client.loop_start()
+'''
+END MQTT CONNECTION MANAGEMENT
+'''
 
 # Wait for connections
 while not LOCAL_CONNECTED and not PUBLIC_CONNECTED:
     time.sleep(0.1)
-    print("Sleeping..........")
+    print("Sleeping...Waiting on connection")
 
 while True:
     try:
