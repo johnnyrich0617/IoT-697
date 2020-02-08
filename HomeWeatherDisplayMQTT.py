@@ -124,6 +124,7 @@ public_client.loop_start()
 # Wait for connections
 while not local_publisher.is_connect() and not public_publisher.is_connect():
     time.sleep(0.1)
+    print("Sleeping..........")
 
 while True:
     try:

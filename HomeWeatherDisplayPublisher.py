@@ -1,15 +1,16 @@
 import paho.mqtt.client as mqttClient
 import weather_display_message as wdm
 
+CONNECTED = False
+
 
 def on_connect(userdata, flags, rc):
     if rc == 0:
         print("Connected to " + userdata + " MQTT Mosquitto Broker...")
-        # PUBLIC_CONNECTED  # Use global variable
-        self.CONNECTED = True  # Signal connection
+        global CONNECTED  # Use global variable
+        CONNECTED = True  # Signal connection
     else:
         print("Connection to" + userdata + " MQTT Mosquitto Broker failed..." + rc)
-        self.stop_publishing()
 
 
 class HomeWeatherPublisher:
@@ -19,7 +20,7 @@ class HomeWeatherPublisher:
         self.mqtt_client_id = mqtt_client_id
         self.port = port
         self.topic = topic
-        self.CONNECTED = False
+        # self.CONNECTED = False
         self.mqtt_client = mqttClient.Client(self.mqtt_client_id)
         # self.mqtt_client.on_connect = self.on_connect
 
@@ -48,7 +49,8 @@ class HomeWeatherPublisher:
         self.mqtt_client.publish(topic=self.topic, payload=mqtt_msg.serialize(), qos=1)
 
     def is_connect(self):
-        return self.CONNECTED
+        global CONNECTED
+        return CONNECTED
 
     def get_client(self):
         return self.mqtt_client
