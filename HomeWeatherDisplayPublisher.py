@@ -3,7 +3,7 @@ import weather_display_message as wdm
 
 CONNECTED = False
 
-
+'''
 def on_connect(userdata, flags, rc):
     if rc == 0:
         print("Connected to " + userdata + " MQTT Mosquitto Broker...")
@@ -11,6 +11,7 @@ def on_connect(userdata, flags, rc):
         CONNECTED = True  # Signal connection
     else:
         print("Connection to" + userdata + " MQTT Mosquitto Broker failed..." + rc)
+'''
 
 
 class HomeWeatherPublisher:
@@ -24,15 +25,10 @@ class HomeWeatherPublisher:
         self.mqtt_client = mqttClient.Client(self.mqtt_client_id)
         # self.mqtt_client.on_connect = self.on_connect
 
-    def connect_and_loop(self):
+    def connect(self):
         print("HomeWeatherPublisher::Connecting to client with id = ", self.mqtt_client_id)
-        self.mqtt_client.on_connect = on_connect
         print("HomeWeatherPublisher::Connecting to host " + self.mqtt_host)
         self.mqtt_client.connect(host=self.mqtt_host, port=self.port)
-        print("HomeWeatherPublisher::Starting the connection loop for client id = ", self.mqtt_client_id)
-        # self.mqtt_client.loop_start()
-        self.mqtt_client.loop_forever()
-        print("HomeWeatherPublisher::Finished the Loop callback for client id =", self.mqtt_client_id)
 
     def stop_publishing(self):
         self.mqtt_client.disconnect()

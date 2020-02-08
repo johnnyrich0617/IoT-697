@@ -38,11 +38,11 @@ from grovepi import *
 from grove_rgb_lcd import *
 import time
 from math import isnan
-import paho.mqtt.client as mqttClient
+import paho.mqtt.client
 import HomeWeatherDisplayPublisher as hwdp
 import weather_display_message as wdm
 
-'''
+
 # USE WITH OUT PUBLISHER
 def local_on_connect(client, userdata, flags, rc):
     if rc == 0:
@@ -68,8 +68,7 @@ def local_on_publish(client, userdata, mid):
 
 def public_on_publish(client, userdata, mid):
     print("PUBLIC CLIENT PUBLISHED MESSAGE WITH ID: " + mid)
-    mqtt_client.publish(topic=self.topic, payload=mqtt_msg.serialize(), qos=1)
-'''
+
         
 
 # connect the DHt sensor to port 7
@@ -83,11 +82,11 @@ setText_norefresh(" ")
 
 
 # global variables for connection state and other data
-'''
+
 # USE WITH OUT PUBLISHER
 LOCAL_CONNECTED = False
 PUBLIC_CONNECTED = False
-'''
+
 
 PUBLISH_TOPIC = "SNHU/IT697/john_richardson3/sensor/data/temphum/"
 local_broker_address = "localhost"
@@ -97,9 +96,6 @@ port = 1883
 
 local_publisher = hwdp.HomeWeatherPublisher(local_broker_address, port, "LOCALCLIENT", PUBLISH_TOPIC)
 public_publisher = hwdp.HomeWeatherPublisher(public_broker_address, port, "PUBLICCLIENT", PUBLISH_TOPIC)
-
-local_publisher.connect_and_loop()
-public_publisher.connect_and_loop()
 
 '''
 # USE WITH OUT PUBLISHER
@@ -121,8 +117,17 @@ local_client.loop_start()
 public_client.loop_start()
 '''
 
+local_mqtt_client = local_publisher.get_client()
+public_mqtt_client = public_publisher.get_client()
+
+local_mqtt_client.on_connect = local_on_connect
+public_mqtt_client.on_connect = public_on_connect
+
+local_mqtt_client.loop_start()
+public_mqtt_client.loop_start()
+
 # Wait for connections
-while not local_publisher.is_connect() and not public_publisher.is_connect():
+while not LOCAL_CONNECTED and not PUBLIC_CONNECTED:
     time.sleep(0.1)
     print("Sleeping..........")
 
