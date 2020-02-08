@@ -106,9 +106,6 @@ PUBLIC_PUBLISHER
 local_publisher = hwdp.HomeWeatherPublisher(local_broker_address, port, "LOCALCLIENT", PUBLISH_TOPIC)
 public_publisher = hwdp.HomeWeatherPublisher(public_broker_address, port, "PUBLICCLIENT", PUBLISH_TOPIC)
 
-# local_mqtt_client.on_connect = local_on_connect
-# public_mqtt_client.on_connect = public_on_connect
-
 local_publisher.set_callbacks(on_connection=local_on_connect, on_publish=local_on_publish)
 public_publisher.set_callbacks(on_connection=public_on_connect, on_publish=public_on_connect)
 
@@ -140,7 +137,7 @@ while True:
         if isnan(temp) is True or isnan(hum) is True:
             raise TypeError('nan error')
         
-    # Convert the aquired temperature to Fahrenheit
+    # Convert the acquired temperature to Fahrenheit
         tempf = (temp * 1.8) + 32
 
     # Print the converted temperature and humidity
@@ -153,12 +150,11 @@ while True:
         if tempf > 68:
             print('Temp is RED........')
             setRGB(255,0,0)
-            pass
         else:
         # If its not greater then 68
         # set the backlighting to BLUE and 
         # print color condition to console
-            print('Temp is BLUE')
+            print('Temp is BLUE.......')
             setRGB(0,0,255)
 
         t = str(temp)
@@ -170,10 +166,8 @@ while True:
         '''
         local_publisher.publish_msg(temp=t, humidity=h)
         public_publisher.publish_msg(temp=t, humidity=h)
-
-
-    # allowing the screen to refresh on writes
-        setText("Temp:" + tf + "F\n" + "Humidity:" + h + "%")
+        # write to the sensor display LCD
+        setText_norefresh("Temp:" + tf + "F\n" + "Humidity:" + h + "%")
 
     except (IOError, TypeError) as e:
         print(str(e))

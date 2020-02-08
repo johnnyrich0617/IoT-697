@@ -4,10 +4,6 @@
     <list default="true" id="3d9d1864-0aed-4e8e-83a6-d0027a4e215e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWeatherDisplayMQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWeatherDisplayMQTT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWeatherDisplayPublisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWeatherDisplayPublisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_temphum_payload.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_temphum_payload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_display_message.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather_display_message.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather_display_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather_display_message.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581188028529</updated>
-      <workItem from="1581188030029" duration="8675000" />
+      <workItem from="1581188030029" duration="9446000" />
     </task>
     <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
       <created>1581190480554</created>
