@@ -3,15 +3,15 @@ import weather_display_message as wdm
 
 
 class HomeWeatherPublisher:
-    CONNECTED = None  # type: bool
 
     def __init__(self, mqtt_host, port, mqtt_client_id, topic):
         self.mqtt_host = mqtt_host
+        self.mqtt_client_id = mqtt_client_id
         self.port = port
         self.topic = topic
         self.CONNECTED = False
-        self.mqtt_client = mqttClient.Client(mqtt_client_id)
-        self.mqtt_client.on_connect = self.on_connect
+        self.mqtt_client = mqttClient.Client(self.mqtt_client_id)
+        # self.mqtt_client.on_connect = self.on_connect
 
     def on_connect(self, client, userdata, flags, rc):
         if rc == 0:
@@ -23,8 +23,13 @@ class HomeWeatherPublisher:
             self.stop_publishing()
 
     def connect_and_loop(self):
+        print("HomeWeatherPublisher::Connecting to client with id = ", self.mqtt_client_id)
+        self.mqtt_client.on_connect = self.on_connect
+        print("HomeWeatherPublisher::Connecting to host " + self.mqtt_host + " and port " + self.port)
         self.mqtt_client.connect(host=self.mqtt_host, port=self.port)
+        print("HomeWeatherPublisher::Starting the connection loop for client id = ", self.mqtt_client_id)
         self.mqtt_client.loop_start()
+        print("HomeWeatherPublisher::Finished the Loop callback for client id =", self.mqtt_client_id)
 
     def stop_publishing(self):
         self.mqtt_client.disconnect()
