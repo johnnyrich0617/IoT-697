@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWeatherDisplayMQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWeatherDisplayMQTT.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWeatherDisplayPublisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWeatherDisplayPublisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_temphum_payload.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_temphum_payload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_display_message.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather_display_message.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather_display_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather_display_message.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581188028529</updated>
-      <workItem from="1581188030029" duration="7615000" />
+      <workItem from="1581188030029" duration="8675000" />
     </task>
     <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
       <created>1581190480554</created>
@@ -111,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581195537949</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="More refactoring">
+      <created>1581196528590</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581196528590</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,18 +135,19 @@
     <MESSAGE value="Refactored global CONNECTED to static function" />
     <MESSAGE value="Refactored for loop_forever" />
     <MESSAGE value="Moved loop in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved loop in main" />
+    <MESSAGE value="More refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="More refactoring" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581195537853">
+    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581196528492">
       <screen x="0" y="23" width="1536" height="877" />
     </state>
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.876@0.23.1536.876" timestamp="1581190480368" />
-    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.877@0.23.1536.877" timestamp="1581195537853" />
-    <state x="399" y="209" key="Vcs.Push.Dialog.v2" timestamp="1581195552657">
+    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.877@0.23.1536.877" timestamp="1581196528492" />
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2" timestamp="1581196529906">
       <screen x="0" y="23" width="1536" height="877" />
     </state>
     <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.876@0.23.1536.876" timestamp="1581190488464" />
-    <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.877@0.23.1536.877" timestamp="1581195552657" />
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.877@0.23.1536.877" timestamp="1581196529906" />
   </component>
 </project>

@@ -1,5 +1,4 @@
 import time
-from datetime import datetime
 import data_temphum_payload as payload
 import jsonpickle
 

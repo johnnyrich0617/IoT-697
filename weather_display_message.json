@@ -1,5 +1,7 @@
 {
-  "timestamp" : "The timestamp as a string in %Y/%m/%d %m/%d/%Y %H:%M:%S.%f format",
-  "temperature" : "The temperature as a string",
-  "humidity" : "The humidity as a string"
+  "timestamp" : "The timestamp as epoch",
+  "data" : {
+    "temperature" : "The temperature as a string",
+    "humidity" : "The humidity as a string"
+  }
 }

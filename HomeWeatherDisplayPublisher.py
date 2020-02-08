@@ -1,18 +1,6 @@
 import paho.mqtt.client as mqttClient
 import weather_display_message as wdm
 
-CONNECTED = False
-
-'''
-def on_connect(userdata, flags, rc):
-    if rc == 0:
-        print("Connected to " + userdata + " MQTT Mosquitto Broker...")
-        global CONNECTED  # Use global variable
-        CONNECTED = True  # Signal connection
-    else:
-        print("Connection to" + userdata + " MQTT Mosquitto Broker failed..." + rc)
-'''
-
 
 class HomeWeatherPublisher:
 
@@ -21,9 +9,7 @@ class HomeWeatherPublisher:
         self.mqtt_client_id = mqtt_client_id
         self.port = port
         self.topic = topic
-        # self.CONNECTED = False
         self.mqtt_client = mqttClient.Client(self.mqtt_client_id)
-        # self.mqtt_client.on_connect = self.on_connect
 
     def connect(self):
         print("HomeWeatherPublisher::Connecting to client with id = ", self.mqtt_client_id)

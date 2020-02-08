@@ -70,7 +70,9 @@ def public_on_publish(client, userdata, mid):
     print("PUBLIC CLIENT PUBLISHED MESSAGE WITH ID: " + mid)
 
         
-
+'''
+Setup the sensors
+'''
 # connect the DHt sensor to port 7
 dht_sensor_port = 7
 # use 0 for the blue-colored sensor and 1 for the white-colored sensor
@@ -80,16 +82,19 @@ setRGB(0, 0, 255)
 # clear the LED Screen
 setText_norefresh(" ")
 
-
+'''
+GLOBALS
+'''
 # global variables for connection state and other data
 LOCAL_CONNECTED = False
 PUBLIC_CONNECTED = False
 
-
+'''
+PUBLISHER Metadata
+'''
 PUBLISH_TOPIC = "SNHU/IT697/john_richardson3/sensor/data/temphum/"
 local_broker_address = "localhost"
 public_broker_address = "test.mosquitto.org"
-# public_broker_port = 1883
 port = 1883
 
 '''
@@ -161,18 +166,7 @@ while True:
         tf = str(tempf)
 
         '''
-        # USE WITH OUT PUBLISHER
-        mqtt_msg = wdm.WeatherDisplayMessage(temp=t, humidity=h)
-        print("Created new MQTT Message with the following:")
-        mqtt_msg.print_raw_content()
-        print("")
-        print("Serialized MQTT Message is as follows:")
-        mqtt_msg.print_serialized_obj()
-        print("")
-        print("")
-
-        local_client.publish(topic=PUBLISH_TOPIC, payload=mqtt_msg.serialize(), qos=1)
-        public_client.publish(topic=PUBLISH_TOPIC, payload=mqtt_msg.serialize(), qos=1)
+        Publish messages to the broker using publisher objects
         '''
         local_publisher.publish_msg(temp=t, humidity=h)
         public_publisher.publish_msg(temp=t, humidity=h)
