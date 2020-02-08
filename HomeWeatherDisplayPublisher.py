@@ -22,7 +22,7 @@ class HomeWeatherPublisher:
             print("Connection to" + userdata + " MQTT Mosquitto Broker failed..." + rc)
             self.stop_publishing()
 
-    def connect(self):
+    def connect_and_loop(self):
         self.mqtt_client.connect(host=self.mqtt_host, port=self.port)
         self.mqtt_client.loop_start()
 

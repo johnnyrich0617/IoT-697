@@ -39,10 +39,11 @@ from grove_rgb_lcd import *
 import time
 from math import isnan
 import paho.mqtt.client as mqttClient
-# import HomeWeatherDisplayPublisher as hwdp
+import HomeWeatherDisplayPublisher as hwdp
 import weather_display_message as wdm
 
-
+'''
+# USE WITH OUT PUBLISHER
 def local_on_connect(client, userdata, flags, rc):
     if rc == 0:
         print("Connected to Local MQTT Mosquitto Broker....")
@@ -68,6 +69,7 @@ def local_on_publish(client, userdata, mid):
 def public_on_publish(client, userdata, mid):
     print("PUBLIC CLIENT PUBLISHED MESSAGE WITH ID: " + mid)
     mqtt_client.publish(topic=self.topic, payload=mqtt_msg.serialize(), qos=1)
+'''
         
 
 # connect the DHt sensor to port 7
@@ -81,21 +83,29 @@ setText_norefresh(" ")
 
 
 # global variables for connection state and other data
+'''
+# USE WITH OUT PUBLISHER
 LOCAL_CONNECTED = False
 PUBLIC_CONNECTED = False
-PUBLISH_TOPIC = "SNHU/IT697/john_richardson3/sensor/data/temphum/"
+'''
 
+PUBLISH_TOPIC = "SNHU/IT697/john_richardson3/sensor/data/temphum/"
 local_broker_address = "localhost"
 public_broker_address = "test.mosquitto.org"
-public_broker_port = 1883
-# user = "yourUser"
-# password = "yourPassword"
+# public_broker_port = 1883
+port = 1883
 
+local_publisher = hwdp.HomeWeatherPublisher(local_broker_address, port, "LOCALCLIENT", PUBLISH_TOPIC)
+public_publisher = hwdp.HomeWeatherPublisher(public_broker_address, port, "PUBLICCLIENT", PUBLISH_TOPIC)
+
+local_publisher.connect_and_loop()
+public_publisher.connect_and_loop()
+
+'''
+# USE WITH OUT PUBLISHER
 # create the MQTT Clients
 local_client = mqttClient.Client("LOCAL")  # create new instance
 public_client = mqttClient.Client("PUBLIC")
-
-# local_client.username_pw_set(user, password=password)  # set username and password
 
 # attach functions to callbacks
 local_client.on_connect = local_on_connect
@@ -109,9 +119,10 @@ public_client.connect(public_broker_address, port=public_broker_port)
 # start the connection loops
 local_client.loop_start()
 public_client.loop_start()
+'''
 
 # Wait for connections
-while not LOCAL_CONNECTED and not PUBLIC_CONNECTED:
+while not local_publisher.is_connect() and not public_publisher.is_connect():
     time.sleep(0.1)
 
 while True:
@@ -149,9 +160,9 @@ while True:
         t = str(temp)
         h = str(hum)
         tf = str(tempf)
-        
-        # setText_norefresh("Temp:" + tf + "F\n" + "Humidity:" + h + "%")
-        
+
+        '''
+        # USE WITH OUT PUBLISHER
         mqtt_msg = wdm.WeatherDisplayMessage(temp=t, humidity=h)
         print("Created new MQTT Message with the following:")
         mqtt_msg.print_raw_content()
@@ -163,6 +174,10 @@ while True:
 
         local_client.publish(topic=PUBLISH_TOPIC, payload=mqtt_msg.serialize(), qos=1)
         public_client.publish(topic=PUBLISH_TOPIC, payload=mqtt_msg.serialize(), qos=1)
+        '''
+        local_publisher.publish_msg(temp=t, humidity=h)
+        public_publisher.publish_msg(temp=t, humidity=h)
+
 
     # allowing the screen to refresh on writes
         setText("Temp:" + tf + "F\n" + "Humidity:" + h + "%")
@@ -170,14 +185,17 @@ while True:
     except (IOError, TypeError) as e:
         print(str(e))
         setText_norefresh(" ")
+        local_publisher.stop_publishing()
+        public_publisher.stop_publishing()
        
         # and since we got a type error
         # then reset the LCD's text
 
     except KeyboardInterrupt as e:
         print(str(e))
-        
         setText_norefresh(" ")
+        local_publisher.stop_publishing()
+        public_publisher.stop_publishing()
         # since we're exiting the program
         # it's better to leave the LCD with a blank text
         break
