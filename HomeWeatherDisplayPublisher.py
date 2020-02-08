@@ -30,7 +30,8 @@ class HomeWeatherPublisher:
         print("HomeWeatherPublisher::Connecting to host " + self.mqtt_host)
         self.mqtt_client.connect(host=self.mqtt_host, port=self.port)
         print("HomeWeatherPublisher::Starting the connection loop for client id = ", self.mqtt_client_id)
-        self.mqtt_client.loop_start()
+        # self.mqtt_client.loop_start()
+        self.mqtt_client.loop_forever()
         print("HomeWeatherPublisher::Finished the Loop callback for client id =", self.mqtt_client_id)
 
     def stop_publishing(self):
