@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581188028529</updated>
-      <workItem from="1581188030029" duration="3674000" />
+      <workItem from="1581188030029" duration="3982000" />
     </task>
     <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
       <created>1581190480554</created>
@@ -61,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581190480554</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added debug msgs">
+      <created>1581192109417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581192109417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,16 +76,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Encapsulated Publisher code into class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulated Publisher code into class" />
+    <MESSAGE value="Added debug msgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added debug msgs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581190480368">
-      <screen x="0" y="23" width="1536" height="876" />
+    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581192109316">
+      <screen x="0" y="23" width="1536" height="877" />
     </state>
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.876@0.23.1536.876" timestamp="1581190480368" />
-    <state x="399" y="209" key="Vcs.Push.Dialog.v2" timestamp="1581190488464">
-      <screen x="0" y="23" width="1536" height="876" />
+    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.877@0.23.1536.877" timestamp="1581192109316" />
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2" timestamp="1581192132668">
+      <screen x="0" y="23" width="1536" height="877" />
     </state>
     <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.876@0.23.1536.876" timestamp="1581190488464" />
+    <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.877@0.23.1536.877" timestamp="1581192132668" />
   </component>
 </project>

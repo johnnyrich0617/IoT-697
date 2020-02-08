@@ -25,7 +25,7 @@ class HomeWeatherPublisher:
     def connect_and_loop(self):
         print("HomeWeatherPublisher::Connecting to client with id = ", self.mqtt_client_id)
         self.mqtt_client.on_connect = self.on_connect
-        print("HomeWeatherPublisher::Connecting to host " + self.mqtt_host + " and port " + self.port)
+        print("HomeWeatherPublisher::Connecting to host " + self.mqtt_host)
         self.mqtt_client.connect(host=self.mqtt_host, port=self.port)
         print("HomeWeatherPublisher::Starting the connection loop for client id = ", self.mqtt_client_id)
         self.mqtt_client.loop_start()
