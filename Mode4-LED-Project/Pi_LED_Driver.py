@@ -23,6 +23,7 @@ def on_connect(client, userdata, flags, rc):
     # subscribe to the LEDs topic when connected
     print("Connected to MQTT Broker........")
     client.subscribe("SNHU/IT697/leds")
+    print("Subscribed to SNHU/IT697/leds..........")
 
 
 def on_message(client, userdata, msg):
