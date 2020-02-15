@@ -1,0 +1,507 @@
+[
+    {
+        "id": "5fa419d7.3bf168",
+        "type": "tab",
+        "label": "IOT-697-MOD-4",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7fa95567.40b8cc",
+        "type": "inject",
+        "z": "5fa419d7.3bf168",
+        "name": "LED_INJECTOR",
+        "topic": "",
+        "payload": "{\"red\":222,\"green\":221,\"blue\":255}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "f9c7edaf.fedfa"
+            ]
+        ]
+    },
+    {
+        "id": "f9c7edaf.fedfa",
+        "type": "function",
+        "z": "5fa419d7.3bf168",
+        "name": "CreateDiscreteData",
+        "func": "var blueMsg = {payload: msg.payload.blue};\nvar redMsg = {payload: msg.payload.red};\nvar greenMsg = {payload: msg.payload.green};\n\nreturn [redMsg, greenMsg, blueMsg];",
+        "outputs": 3,
+        "noerr": 0,
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "2407964.4f72c6a",
+                "d6b2aeba.45b17"
+            ],
+            [
+                "feffedee.28657",
+                "fb24a10e.78871"
+            ],
+            [
+                "13efc89b.1a8747",
+                "36e90291.3b22ee"
+            ]
+        ]
+    },
+    {
+        "id": "feffedee.28657",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "GREEN",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "13efc89b.1a8747",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "BLUE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 570,
+        "y": 329,
+        "wires": []
+    },
+    {
+        "id": "2407964.4f72c6a",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "RED",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 490,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a815dd49.b9eb9",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "REST_PL",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 280,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "12b6a05b.a9e2",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "BLUE_VALUE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 740,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4e44665f.f60c48",
+        "type": "http in",
+        "z": "5fa419d7.3bf168",
+        "name": "SetLEDS ",
+        "url": "/leds/v2",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 60,
+        "y": 100,
+        "wires": [
+            [
+                "1bec80ff.a780df"
+            ]
+        ]
+    },
+    {
+        "id": "1bec80ff.a780df",
+        "type": "function",
+        "z": "5fa419d7.3bf168",
+        "name": "GetRestPayload",
+        "func": "msg.payload = msg.req.body\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "f9c7edaf.fedfa",
+                "a815dd49.b9eb9",
+                "839c12c6.26ed7"
+            ]
+        ]
+    },
+    {
+        "id": "1106110f.42b87f",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "GREEN_VALUE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 740,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8b4855c9.909eb8",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "RED_VALUE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 730,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "839c12c6.26ed7",
+        "type": "http response",
+        "z": "5fa419d7.3bf168",
+        "name": "RestResponse",
+        "statusCode": "",
+        "headers": {},
+        "x": 360,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1e8f3bae.72a634",
+        "type": "function",
+        "z": "5fa419d7.3bf168",
+        "name": "CommonMsgFmtr",
+        "func": "var LEDS = global.get('LEDS')||{};\nvar topic = msg.topic;\n\nswitch(topic){\n    \n    case \"red\":\n        msg.payload = {red : msg.payload};\n        LEDS.red = msg.payload.red;\n        global.set('LEDS', LEDS);\n        break;\n    \n    case \"green\":\n        msg.payload = {green : msg.payload};\n        LEDS.green = msg.payload.green;\n        global.set('LEDS', LEDS);\n        break;\n    \n    case \"blue\":\n        msg.payload = {blue : msg.payload};\n        LEDS.blue = msg.payload.blue;\n        global.set('LEDS', LEDS);\n        break;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "8c5d6cce.1a1b3",
+                "d5926373.f62d"
+            ]
+        ]
+    },
+    {
+        "id": "8c5d6cce.1a1b3",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "Formatted_MSG",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1110,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8ac412f2.33dd",
+        "type": "change",
+        "z": "5fa419d7.3bf168",
+        "name": "DeletePayloadMsgId",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload._msgid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 560,
+        "wires": [
+            [
+                "839c12c6.26ed7",
+                "5186ae1c.d3b37"
+            ]
+        ]
+    },
+    {
+        "id": "72886002.dd0c",
+        "type": "http in",
+        "z": "5fa419d7.3bf168",
+        "name": "GetLEDValues",
+        "url": "/leds/v2",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 560,
+        "wires": [
+            [
+                "3561b62.5e6ee4a"
+            ]
+        ]
+    },
+    {
+        "id": "3561b62.5e6ee4a",
+        "type": "function",
+        "z": "5fa419d7.3bf168",
+        "name": "GET_GLOBALS",
+        "func": "msg.payload = global.get('LEDS')||{};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "8ac412f2.33dd",
+                "5891436.44954bc"
+            ]
+        ]
+    },
+    {
+        "id": "5186ae1c.d3b37",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "DELETE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 700,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5891436.44954bc",
+        "type": "debug",
+        "z": "5fa419d7.3bf168",
+        "name": "GET_GLOBALS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 380,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "998d95d5.87e458",
+        "type": "mqtt out",
+        "z": "5fa419d7.3bf168",
+        "name": "RED_TOPIC",
+        "topic": "SNHU/IT697/leds/red",
+        "qos": "2",
+        "retain": "",
+        "broker": "62d0ad35.389d94",
+        "x": 1170,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d5926373.f62d",
+        "type": "switch",
+        "z": "5fa419d7.3bf168",
+        "name": "Seperator",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "blue",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 1000,
+        "y": 380,
+        "wires": [
+            [
+                "998d95d5.87e458"
+            ],
+            [
+                "9f00e2ad.2ffcc"
+            ],
+            [
+                "efd08771.93a7d8"
+            ]
+        ]
+    },
+    {
+        "id": "9f00e2ad.2ffcc",
+        "type": "mqtt out",
+        "z": "5fa419d7.3bf168",
+        "name": "GREEN_TOPIC",
+        "topic": "SNHU/IT697/leds/green",
+        "qos": "2",
+        "retain": "",
+        "broker": "62d0ad35.389d94",
+        "x": 1180,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "efd08771.93a7d8",
+        "type": "mqtt out",
+        "z": "5fa419d7.3bf168",
+        "name": "BLUE_TOPIC",
+        "topic": "SNHU/IT697/leds/blue",
+        "qos": "2",
+        "retain": "",
+        "broker": "62d0ad35.389d94",
+        "x": 1180,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d6b2aeba.45b17",
+        "type": "ui_slider",
+        "z": "5fa419d7.3bf168",
+        "tab": "befbb3c6.ccca3",
+        "name": "Red Slider",
+        "topic": "red",
+        "group": "LEDS",
+        "order": 1,
+        "min": 0,
+        "max": "255",
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "8b4855c9.909eb8",
+                "1e8f3bae.72a634"
+            ]
+        ]
+    },
+    {
+        "id": "fb24a10e.78871",
+        "type": "ui_slider",
+        "z": "5fa419d7.3bf168",
+        "tab": "befbb3c6.ccca3",
+        "name": "Green Slider",
+        "topic": "green",
+        "group": "LEDS",
+        "order": 1,
+        "min": 0,
+        "max": "255",
+        "x": 570,
+        "y": 259,
+        "wires": [
+            [
+                "1106110f.42b87f",
+                "1e8f3bae.72a634"
+            ]
+        ]
+    },
+    {
+        "id": "36e90291.3b22ee",
+        "type": "ui_slider",
+        "z": "5fa419d7.3bf168",
+        "tab": "befbb3c6.ccca3",
+        "name": "Blue Slider",
+        "topic": "blue",
+        "group": "LEDS",
+        "order": 1,
+        "min": 0,
+        "max": "255",
+        "x": 570,
+        "y": 372,
+        "wires": [
+            [
+                "1e8f3bae.72a634",
+                "12b6a05b.a9e2"
+            ]
+        ]
+    },
+    {
+        "id": "cd098758.55dd18",
+        "type": "comment",
+        "z": "5fa419d7.3bf168",
+        "name": "Discretes",
+        "info": "Each discrete has its own topic for performance",
+        "x": 1000,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "62d0ad35.389d94",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Localhost Broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "befbb3c6.ccca3",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": "1"
+    }
+]
