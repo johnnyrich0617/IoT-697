@@ -63,7 +63,7 @@
       <workItem from="1581293768324" duration="3573000" />
       <workItem from="1581704944021" duration="343000" />
       <workItem from="1581706183694" duration="27000" />
-      <workItem from="1581706813078" duration="2177000" />
+      <workItem from="1581706813078" duration="3277000" />
     </task>
     <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
       <created>1581190480554</created>
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581778162747</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Module 4 Code Added Multiple Topics Subscription, Fixed error">
+      <created>1581778303437</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581778303437</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,21 +174,22 @@
     <MESSAGE value="Module 4 Code Baseline" />
     <MESSAGE value="Module 4 Code Added Print statements" />
     <MESSAGE value="Module 4 Code Added Multiple Topics Subscription" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module 4 Code Added Multiple Topics Subscription" />
+    <MESSAGE value="Module 4 Code Added Multiple Topics Subscription, Fixed error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module 4 Code Added Multiple Topics Subscription, Fixed error" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581778162635">
+    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581778303327">
       <screen x="0" y="23" width="1536" height="883" />
     </state>
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.876@0.23.1536.876" timestamp="1581190480368" />
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.877@0.23.1536.877" timestamp="1581707160452" />
-    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.883@0.23.1536.883" timestamp="1581778162635" />
-    <state x="399" y="210" key="Vcs.Push.Dialog.v2" timestamp="1581778165987">
+    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.883@0.23.1536.883" timestamp="1581778303327" />
+    <state x="399" y="210" key="Vcs.Push.Dialog.v2" timestamp="1581778307031">
       <screen x="0" y="23" width="1536" height="883" />
     </state>
     <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.876@0.23.1536.876" timestamp="1581190488464" />
     <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.877@0.23.1536.877" timestamp="1581707167824" />
-    <state x="399" y="210" key="Vcs.Push.Dialog.v2/0.23.1536.883@0.23.1536.883" timestamp="1581778165987" />
+    <state x="399" y="210" key="Vcs.Push.Dialog.v2/0.23.1536.883@0.23.1536.883" timestamp="1581778307031" />
     <state x="436" y="314" key="com.intellij.ide.util.TipDialog" timestamp="1581706820755">
       <screen x="0" y="23" width="1536" height="877" />
     </state>

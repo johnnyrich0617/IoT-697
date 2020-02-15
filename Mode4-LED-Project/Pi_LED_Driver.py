@@ -38,10 +38,19 @@ def on_message(client, userdata, msg):
      """
     print("Received message from MQTT Broker.....")
     print(msg.topic, msg.payload)
+    _topic = msg.topic
     led_payload = jsonpickle.decode(msg.payload)
-    # payload = json.loads(msg.payload)
-    # the legal values for analogWrite are 0-255
-    grovepi.analogWrite(BLUE_LED, led_payload['blue'])
+    if _topic == 'SNHU/IT697/leds':
+        # payload = json.loads(msg.payload)
+        # the legal values for analogWrite are 0-255
+        grovepi.analogWrite(BLUE_LED, led_payload['blue'])
+    elif _topic == 'SNHU/IT697/leds/blue':
+        # payload = json.loads(msg.payload)
+        # the legal values for analogWrite are 0-255
+        grovepi.analogWrite(BLUE_LED, led_payload['blue'])
+    else:
+        print("No Registered Topic......")
+        return
 
 
 subscriber = ms.MQTTSubscriber(mqtt_host="localhost", mqtt_client_id="LOCAL_SUBSCRIBER", port=1883)
