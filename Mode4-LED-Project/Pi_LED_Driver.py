@@ -41,10 +41,12 @@ def on_message(client, userdata, msg):
     _topic = msg.topic
     led_payload = jsonpickle.decode(msg.payload)
     if _topic == 'SNHU/IT697/leds':
+        print("Processing " + _topic + " with msg " +msg.payload)
         # payload = json.loads(msg.payload)
         # the legal values for analogWrite are 0-255
         grovepi.analogWrite(BLUE_LED, led_payload['blue'])
     elif _topic == 'SNHU/IT697/leds/blue':
+        print("Processing " + _topic + " with msg " + msg.payload)
         # payload = json.loads(msg.payload)
         # the legal values for analogWrite are 0-255
         grovepi.analogWrite(BLUE_LED, led_payload['blue'])
