@@ -63,7 +63,7 @@
       <workItem from="1581293768324" duration="3573000" />
       <workItem from="1581704944021" duration="343000" />
       <workItem from="1581706183694" duration="27000" />
-      <workItem from="1581706813078" duration="3565000" />
+      <workItem from="1581706813078" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
       <created>1581190480554</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581779805422</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Module 4 Code Added Multiple Topics Subscription, Added additional prints">
+      <created>1581780102199</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581780102199</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,20 +190,23 @@
     <MESSAGE value="Module 4 Code Added Multiple Topics Subscription" />
     <MESSAGE value="Module 4 Code Added Multiple Topics Subscription, Fixed error" />
     <MESSAGE value="Module 4 Code Added Multiple Topics Subscription, Added if,else" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module 4 Code Added Multiple Topics Subscription, Added if,else" />
+    <MESSAGE value="Module 4 Code Added Multiple Topics Subscription, Added additional prints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module 4 Code Added Multiple Topics Subscription, Added additional prints" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581779805311">
-      <screen x="0" y="23" width="1536" height="883" />
+    <state x="382" y="83" key="CommitChangelistDialog2" timestamp="1581780102092">
+      <screen x="0" y="23" width="1536" height="882" />
     </state>
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.876@0.23.1536.876" timestamp="1581190480368" />
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.877@0.23.1536.877" timestamp="1581707160452" />
+    <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.882@0.23.1536.882" timestamp="1581780102092" />
     <state x="382" y="83" key="CommitChangelistDialog2/0.23.1536.883@0.23.1536.883" timestamp="1581779805311" />
-    <state x="399" y="210" key="Vcs.Push.Dialog.v2" timestamp="1581779808239">
-      <screen x="0" y="23" width="1536" height="883" />
+    <state x="399" y="210" key="Vcs.Push.Dialog.v2" timestamp="1581780104151">
+      <screen x="0" y="23" width="1536" height="882" />
     </state>
     <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.876@0.23.1536.876" timestamp="1581190488464" />
     <state x="399" y="209" key="Vcs.Push.Dialog.v2/0.23.1536.877@0.23.1536.877" timestamp="1581707167824" />
+    <state x="399" y="210" key="Vcs.Push.Dialog.v2/0.23.1536.882@0.23.1536.882" timestamp="1581780104151" />
     <state x="399" y="210" key="Vcs.Push.Dialog.v2/0.23.1536.883@0.23.1536.883" timestamp="1581779808239" />
     <state x="436" y="314" key="com.intellij.ide.util.TipDialog" timestamp="1581706820755">
       <screen x="0" y="23" width="1536" height="877" />
