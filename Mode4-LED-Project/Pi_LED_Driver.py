@@ -21,9 +21,11 @@ def on_connect(client, userdata, flags, rc):
      :return: None
      """
     # subscribe to the LEDs topic when connected
+    topics = [("SNHU/IT697/leds", 2), ("SNHU/IT697/leds/blue", 2)]
     print("Connected to MQTT Broker........")
-    client.subscribe("SNHU/IT697/leds")
-    print("Subscribed to SNHU/IT697/leds..........")
+    # client.subscribe("SNHU/IT697/leds")
+    client.subscribe.(topics)
+    print("Subscribed to ...", topics)
 
 
 def on_message(client, userdata, msg):
