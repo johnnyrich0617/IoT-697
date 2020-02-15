@@ -24,7 +24,7 @@ def on_connect(client, userdata, flags, rc):
     topics = [("SNHU/IT697/leds", 2), ("SNHU/IT697/leds/blue", 2)]
     print("Connected to MQTT Broker........")
     # client.subscribe("SNHU/IT697/leds")
-    client.subscribe.(topics)
+    client.subscribe(topics)
     print("Subscribed to ...", topics)
 
 
