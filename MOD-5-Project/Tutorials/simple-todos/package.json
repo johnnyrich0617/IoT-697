@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.7.6",
+    "bcrypt": "^3.0.8",
+    "classnames": "^2.2.6",
     "jquery": "^3.4.1",
     "meteor-node-stubs": "^1.0.0",
     "react": "^16.12.0",
@@ -20,5 +22,8 @@
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
   }
 }
