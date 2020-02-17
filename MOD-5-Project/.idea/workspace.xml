@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/startup/accounts-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/AccountsUIWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.tests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/Task.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/server/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/server/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/tests/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/tests/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581958482807</updated>
       <workItem from="1581958484294" duration="597000" />
-      <workItem from="1581959111672" duration="11732000" />
+      <workItem from="1581959111672" duration="12072000" />
+      <workItem from="1581973085956" duration="6636000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Push for Bae Meteor Tutorial">
       <created>1581958891787</created>
@@ -88,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581959202798</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Base Application tagged insecure">
+      <created>1581972888323</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581972888323</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +125,11 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
@@ -133,16 +141,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Push for Bae Meteor Tutorial" />
     <MESSAGE value="Base Files for Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base Files for Project" />
+    <MESSAGE value="Base Application tagged insecure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base Application tagged insecure" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2" timestamp="1581972828395">
+    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2" timestamp="1581972888278">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
-    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2/0.28.1920.1018@0.28.1920.1018" timestamp="1581972828395" />
-    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1581959208478">
+    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2/0.28.1920.1018@0.28.1920.1018" timestamp="1581972888278" />
+    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1581972893878">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
-    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2/0.28.1920.1018@0.28.1920.1018" timestamp="1581959208478" />
+    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2/0.28.1920.1018@0.28.1920.1018" timestamp="1581972893878" />
   </component>
 </project>
