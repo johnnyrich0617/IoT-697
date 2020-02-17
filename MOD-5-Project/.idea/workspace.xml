@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/.finished-upgraders" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/.id" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/packages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/platforms" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/release" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/versions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/server/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/tests/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XwYAkxapDdKfLsmxsc6dIrgKI8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="enabled" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.meteor.library.cached" value="$PROJECT_DIR$/Tutorials/simple-todos/.meteor" />
+    <property name="js.meteor.library.was.enabled" value="true" />
+    <property name="js.meteor.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="" />
+      <created>1581958482807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581958482807</updated>
+      <workItem from="1581958484294" duration="249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/jrichardson/Development/IOT697Projects/IoT-697/MOD-5-Project" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+</project>
