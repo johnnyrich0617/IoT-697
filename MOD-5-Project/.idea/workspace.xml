@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/.finished-upgraders" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/.id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/packages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/platforms" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/release" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/versions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/client/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/server/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/tests/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="John Richardson &lt;john.richardson.0617@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1XwYAkxapDdKfLsmxsc6dIrgKI8" />
@@ -53,8 +41,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581958482807</updated>
-      <workItem from="1581958484294" duration="249000" />
+      <workItem from="1581958484294" duration="597000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Push for Bae Meteor Tutorial">
+      <created>1581958891787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581958891787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,5 +91,19 @@
         <option value="1" />
       </set>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Push for Bae Meteor Tutorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Push for Bae Meteor Tutorial" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2" timestamp="1581958891686">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2/0.28.1920.1018@0.28.1920.1018" timestamp="1581958891686" />
+    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1581958900547">
+      <screen x="0" y="28" width="1920" height="1018" />
+    </state>
+    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2/0.28.1920.1018@0.28.1920.1018" timestamp="1581958900547" />
   </component>
 </project>
