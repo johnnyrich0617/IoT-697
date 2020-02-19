@@ -1,14 +1,15 @@
 import paho.mqtt.client as mqttClient
-import weather_display_message as wdm
+from messages import weather_display_message as wdm
+from utils import uuidgen
 
 
 class HomeWeatherPublisher:
 
-    def __init__(self, mqtt_host, port, mqtt_client_id, topic):
+    def __init__(self, mqtt_host, port, mqtt_client_id, base_topic):
         self.mqtt_host = mqtt_host
         self.mqtt_client_id = mqtt_client_id
         self.port = port
-        self.topic = topic
+        self.topic = base_topic + uuidgen.generate_uuid()
         self.mqtt_client = mqttClient.Client(self.mqtt_client_id)
 
     def connect(self):
