@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.tests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/api/tasks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/imports/ui/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/tests/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/tests/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +47,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -68,7 +61,8 @@
       <updated>1581958482807</updated>
       <workItem from="1581958484294" duration="597000" />
       <workItem from="1581959111672" duration="12072000" />
-      <workItem from="1581973085956" duration="6636000" />
+      <workItem from="1581973085956" duration="7494000" />
+      <workItem from="1582125855933" duration="1635000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Push for Bae Meteor Tutorial">
       <created>1581958891787</created>
@@ -91,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581972888323</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Base Application tagged completed tutorial">
+      <created>1581979964975</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581979964975</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +128,9 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -139,19 +142,21 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Initial Push for Bae Meteor Tutorial" />
     <MESSAGE value="Base Files for Project" />
     <MESSAGE value="Base Application tagged insecure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base Application tagged insecure" />
+    <MESSAGE value="Base Application tagged completed tutorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base Application tagged completed tutorial" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2" timestamp="1581972888278">
+    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2" timestamp="1581979964824">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
-    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2/0.28.1920.1018@0.28.1920.1018" timestamp="1581972888278" />
-    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1581972893878">
+    <state x="330" y="28" width="1007" height="993" key="CommitChangelistDialog2/0.28.1920.1018@0.28.1920.1018" timestamp="1581979964824" />
+    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1581979968028">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
-    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2/0.28.1920.1018@0.28.1920.1018" timestamp="1581972893878" />
+    <state x="388" y="249" width="800" height="543" key="Vcs.Push.Dialog.v2/0.28.1920.1018@0.28.1920.1018" timestamp="1581979968028" />
   </component>
 </project>

@@ -1,8 +1,7 @@
 import time
 import grovepi
-import paho.mqtt.client as mqtt
 import jsonpickle
-import MQTTSubscriber as ms
+from pi_sensors.subscribers import MQTTSubscriber as ms
 
 # Connect the blue LED to digital port D5
 BLUE_LED = 5
@@ -64,9 +63,3 @@ subscriber.register_callbacks(on_connect=on_connect, on_message=on_message)
 subscriber.connect()
 local_client = subscriber.get_client()
 local_client.loop_forever()
-
-# local_client = mqtt.Client()
-# local_client.on_connect = on_connect
-# local_client.on_message = on_message
-# local_client.connect("localhost")
-# local_client.loop_forever()
