@@ -7,7 +7,7 @@
 
 ### Execution
 * Execute the following, "chmod 700 HomeWeatherReporter.sh"
-** This will set the script as executable and Pi the owner
+  * This will set the script as executable and Pi the owner
 * Execute the HomeWeatherReporter.sh, ./HomeWeatherReporter.sh
-** This script will set the Python Runtime Environment for package discovery
-** Execute the supplied python script
+  * This script will set the Python Runtime Environment for package discovery
+  * Execute the supplied python script
