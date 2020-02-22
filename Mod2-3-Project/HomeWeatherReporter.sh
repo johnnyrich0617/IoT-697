@@ -1,7 +1,7 @@
 #!/bin/bash
 #Source the runtime env for the python script
-echo Sourcing runtime environment.......................
-source ./runtime_env.sh
+#echo Sourcing runtime environment.......................
+#source ./runtime_env.sh
 
 echo Starting Home Weather Reporter.....................
 #execute the python script
