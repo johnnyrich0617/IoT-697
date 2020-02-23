@@ -2,7 +2,9 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/MOD-5-Project/Tutorials/iot/.meteor/local" />
       <excludeFolder url="file://$MODULE_DIR$/MOD-5-Project/Tutorials/simple-todos/.meteor/local" />
+      <excludeFolder url="file://$MODULE_DIR$/MOD-7-Client/iot/.meteor/local" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 2.7 (venv)" jdkType="Python SDK" />

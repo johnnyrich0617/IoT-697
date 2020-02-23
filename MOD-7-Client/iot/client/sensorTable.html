@@ -1,0 +1,30 @@
+<template name="sensorTable">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sensor ID</th>
+                    <th>Timestamp</th>
+                    <th>Date:Time</th>
+                    <th>Temperature</th>
+                    <th>Humidity</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each sensors}}
+                    {{> sensorRow}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="sensorRow">
+    <tr>
+        <td>{{_id}}</td>
+        <td>{{timestamp}}</td>
+        <td>{{datetime}}</td>
+        <td>{{data.temperature}}</td>
+        <td>{{data.humidity}}</td>
+    </tr>
+</template>

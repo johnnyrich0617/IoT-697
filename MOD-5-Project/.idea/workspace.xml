@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56bf378d-daa1-40fe-a4a9-eef3eb42d312" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/main-layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/sensor-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/sensorTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/sideNav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/client/topNav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/collections/collections.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MOD-7-Client/iot/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Start_ToDos_Client.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flows/IT697_MOD_6_7_Flow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MOD-5-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MOD-5-Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorials/simple-todos/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +54,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.meteor.library.cached" value="$PROJECT_DIR$/Tutorials/simple-todos/.meteor" />
+    <property name="js.meteor.library.cached" value="$PROJECT_DIR$/Tutorials/simple-todos/.meteor&#10;/home/jrichardson/Development/IOT697Projects/IoT-697/MOD-5-Project/Tutorials/iot/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -63,6 +80,7 @@
       <workItem from="1581959111672" duration="12072000" />
       <workItem from="1581973085956" duration="7494000" />
       <workItem from="1582125855933" duration="1635000" />
+      <workItem from="1582429736787" duration="2245000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Push for Bae Meteor Tutorial">
       <created>1581958891787</created>

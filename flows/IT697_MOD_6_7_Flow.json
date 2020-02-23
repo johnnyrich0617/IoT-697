@@ -1,0 +1,120 @@
+[
+    {
+        "id": "3fd1c00e.18368",
+        "type": "tab",
+        "label": "Mod 6 and 7 Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c1e93155.022628",
+        "type": "debug",
+        "z": "3fd1c00e.18368",
+        "name": "MQTT_IN_DEBUG",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 380,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "df8dd3be.e33f1",
+        "type": "mqtt in",
+        "z": "3fd1c00e.18368",
+        "name": "PI_SENSORS_MQTT_BUS",
+        "topic": "SNHU/IT697/john_richardson3/sensor/data/#",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "2e852088.9d8e5",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "c1e93155.022628",
+                "b50ada17.d9646"
+            ]
+        ]
+    },
+    {
+        "id": "b50ada17.d9646",
+        "type": "function",
+        "z": "3fd1c00e.18368",
+        "name": "SET_MONGO_COLLECTION",
+        "func": "msg.collection = \"sensors\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640,
+        "y": 260,
+        "wires": [
+            [
+                "ea9df9f.63a1708",
+                "ce1770a5.08847"
+            ]
+        ]
+    },
+    {
+        "id": "ea9df9f.63a1708",
+        "type": "debug",
+        "z": "3fd1c00e.18368",
+        "name": "COLLECTIONS DEBUG",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 900,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ce1770a5.08847",
+        "type": "mongodb out",
+        "z": "3fd1c00e.18368",
+        "mongodb": "3fe2d92d.a8acae",
+        "name": "DOCKER_MONGO_OUT",
+        "collection": "",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 1030,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2e852088.9d8e5",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "PI-MQTT-BUS",
+        "broker": "192.168.86.41",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "3fe2d92d.a8acae",
+        "type": "mongodb",
+        "z": "",
+        "hostname": "127.0.0.1",
+        "port": "27017",
+        "db": "meteor",
+        "name": "DOCKER MONGO"
+    }
+]
