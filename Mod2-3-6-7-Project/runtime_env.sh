@@ -1,11 +1,20 @@
 #!/bin/bash
-#Exporting Python Path to runtime for external package locations
 
-#set the project base dir
-#projectPackageBase=/home/pi/Projects/IoT-697
+# What OS are we running on?
+# right now this script will only apply to linux-gnu
+sitePackagesLoc = 'unknown'
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    sitePackagesLoc = ~/.local/lib/python27/site-packages
+else
+  echo Must be running on Linux OS to run this script
+  echo Exiting.......................
+  exit
+fi
 
-#export the runtime python path to be sourced
-#export PYTHONPATH=$PYTHONPATH:$projectPackageBase/messages:$projectPackageBase/utils:$projectPackageBase/pi_sensors:$projectPackageBase/pi_sensors/publishers:$projectPackageBase/pi_sensors/subscribers
+if [ ! -d "$sitePackagesLoc" ]; then
+    
+else
 
 
-# Need to change this to copy packages to ./local....
+fi
+
