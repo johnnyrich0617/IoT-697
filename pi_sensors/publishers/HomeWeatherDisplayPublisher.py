@@ -9,7 +9,8 @@ class HomeWeatherPublisher:
         self.mqtt_host = mqtt_host
         self.mqtt_client_id = mqtt_client_id
         self.port = port
-        self.topic = base_topic + uuidgen.generate_uuid()
+        self.sensorId = uuidgen.generate_uuid()
+        self.topic = base_topic + self.sensorId
         self.mqtt_client = mqttClient.Client(self.mqtt_client_id)
 
     def connect(self):
@@ -26,7 +27,7 @@ class HomeWeatherPublisher:
         self.mqtt_client.on_publish = on_publish
 
     def publish_msg(self, temp, humidity):
-        mqtt_msg = wdm.WeatherDisplayMessage(temp=temp, humidity=humidity)
+        mqtt_msg = wdm.WeatherDisplayMessage(temp=temp, humidity=humidity, sensorId=self.sensorId)
         print("Created new MQTT Message with the following:")
         mqtt_msg.print_raw_content()
         print("")

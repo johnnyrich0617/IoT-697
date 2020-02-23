@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d9d1864-0aed-4e8e-83a6-d0027a4e215e" name="Default Changelist" comment="Added Mod4 Nodered flow">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rGraphicsSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/messages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pi_sensors/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pi_sensors/publishers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pi_sensors/subscribers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/uuidgen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IoT-697.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IoT-697.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOD-5-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MOD-5-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MOD-5-Project/Tutorials/simple-todos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MOD-5-Project/Tutorials/simple-todos/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/HomeWeatherDisplayMQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod2-3-Project/HomeWeatherDisplayMQTT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/HomeWeatherDisplayPublisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_sensors/publishers/HomeWeatherDisplayPublisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/data_temphum_payload.py" beforeDir="false" afterPath="$PROJECT_DIR$/messages/data_temphum_payload.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/weather_display_message.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/weather_display_message.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/weather_display_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/messages/weather_display_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mode4-LED-Project/MQTTSubscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_sensors/subscribers/MQTTSubscriber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mode4-LED-Project/Pi_LED_Driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mode4-LED-Project/Pi_LED_Driver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/HomeWeatherDisplayMQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mod2-3-6-7-Project/HomeWeatherDisplayMQTT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/HomeWeatherReporter.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Mod2-3-6-7-Project/HomeWeatherReporter.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Mod2-3-6-7-Project/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mod2-3-Project/runtime_env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Mod2-3-6-7-Project/runtime_env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messages/weather_display_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/messages/weather_display_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_sensors/publishers/HomeWeatherDisplayPublisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi_sensors/publishers/HomeWeatherDisplayPublisher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +104,7 @@
       <workItem from="1581883451076" duration="1829000" />
       <workItem from="1582131401139" duration="2272000" />
       <workItem from="1582148923002" duration="4778000" />
+      <workItem from="1582412769038" duration="2295000" />
     </task>
     <task id="LOCAL-00001" summary="Encapsulated Publisher code into class">
       <created>1581190480554</created>
@@ -322,12 +309,12 @@
     <state x="399" y="210" key="Vcs.Push.Dialog.v2/0.23.1536.883@0.23.1536.883" timestamp="1581779808239" />
     <state x="399" y="210" key="Vcs.Push.Dialog.v2/0.23.1536.884@0.23.1536.884" timestamp="1581789021482" />
     <state x="399" y="211" key="Vcs.Push.Dialog.v2/0.23.1536.887@0.23.1536.887" timestamp="1581886542470" />
-    <state x="545" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1582148924840">
+    <state x="545" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1582412874253">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>
     <state x="436" y="314" key="com.intellij.ide.util.TipDialog/0.23.1536.877@0.23.1536.877" timestamp="1581706820755" />
     <state x="436" y="317" key="com.intellij.ide.util.TipDialog/0.23.1536.887@0.23.1536.887" timestamp="1581883452415" />
-    <state x="545" y="365" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1582148924840" />
+    <state x="545" y="365" key="com.intellij.ide.util.TipDialog/0.28.1920.1018@0.28.1920.1018" timestamp="1582412874253" />
     <state x="656" y="167" width="597" height="747" key="git4idea.branch.GitSmartOperationDialog" timestamp="1582147918228">
       <screen x="0" y="28" width="1920" height="1018" />
     </state>

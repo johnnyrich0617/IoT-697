@@ -5,7 +5,8 @@ import jsonpickle
 
 class WeatherDisplayMessage:
 
-    def __init__(self, temp, humidity):
+    def __init__(self, temp, humidity, sensorId):
+        self.sensorId = sensorId
         self.data = payload.DataPayload(temp, humidity)
         self.timestamp = time.time()
         timeObj = time.localtime(self.timestamp)
