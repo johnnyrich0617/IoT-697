@@ -6,8 +6,11 @@
 * Assumes the use of GrovePi+ board
 
 ### Execution
-* Execute the following, "chmod 700 HomeWeatherReporter.sh"
-  * This will set the script as executable and Pi the owner
-* Execute the HomeWeatherReporter.sh, ./HomeWeatherReporter.sh
-  * This script will set the Python Runtime Environment for package discovery
+* Execute the following chmod cmds:
+  * chmod 700 runtime_env.sh
+    * This script will setup the python repository and install specific python packages
+  * chmod 700 HomeWeatherReporter.sh
+    * This script is the main python application loop
+* From within this directory, execute the HomeWeatherReporter.sh, "./HomeWeatherReporter.sh"
+  * Upon execution you will be prompted to perform setup options, you will need to perform the options at least once
   * Execute the supplied python script
